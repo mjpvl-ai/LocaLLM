@@ -2,6 +2,10 @@
 
 This guide will help you set up, build, and run the DeepSeek LLM model using Docker.
 
+## Problem Statement
+
+With the growing need for running Large Language Models (LLMs) on local machines, setting up and deploying these models efficiently remains a challenge. The objective of this project is to provide a streamlined way to deploy the DeepSeek-LLM-7B-Base model using llama.cpp within a Docker container. This ensures a portable, reproducible, and scalable environment for local inference.
+
 ## Prerequisites
 
 Make sure you have the following installed on your system:
@@ -73,9 +77,8 @@ docker logs llama-container
 
 Once the server is running, you can interact with it via `curl` or a web request:
 ```bash
-curl -X POST "http://localhost:8080/generate" \
-     -H "Content-Type: application/json" \
-     -d '{"prompt": "Hello, how are you?", "max_tokens": 100}'
+curl -X POST "http://localhost:8080/completion" -H "Content-Type: application/json" -d '{"prompt": "What is AI?", "n_predict": 100}'
+
 ```
 
 You should see a response from the model in JSON format.

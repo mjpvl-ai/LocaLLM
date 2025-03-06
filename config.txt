@@ -1,0 +1,2 @@
+MODEL_NAME=DeepSeek-R1-Distill-Qwen-14B-IQ2_XS.gguf
+MODEL_URL=https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-14B-IQ2_XS.gguf
